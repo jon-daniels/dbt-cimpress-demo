@@ -1,0 +1,19 @@
+default:
+  default-snowflake-db:
+  target: default
+  outputs:
+    default:
+      type: snowflake
+      account: <include the snowflake account name here>
+
+      # User/password auth
+      user: <include your username here>
+      password: <include your password here>
+
+      role: archetype_dbt_sessions
+      database: archetype_sessions
+      warehouse: cimba_wh
+      schema: <include dbt_ plus your initials fili_ plus core here>  # e.g. dbt_jd_core
+      threads: 10
+      client_session_keep_alive: False
+      query_tag: default
