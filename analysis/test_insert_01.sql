@@ -1,0 +1,1 @@
+INSERT INTO mart_demo.dbt_jd_core.rf_coastline_distances (country, distance_km) VALUES (NULL, 5);
