@@ -1,0 +1,28 @@
+
+version: 2
+
+models:
+  - name: rf_coastline_distances
+    columns:
+      - name: country
+        tags: 
+          - lookup
+        tests:
+          - unique
+          - not_null
+  - name: rf_country_codes
+    columns:
+      - name: country
+        tags: 
+          - lookup
+        tests:
+          - unique
+          - not_null
+  - name: rf_square_kilometers
+    columns:
+      - name: country
+        tags: 
+          - lookup
+        tests:
+          - unique
+          - not_null

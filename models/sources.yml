@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: agriculture_atlas
+    database: raw_demo
+    loader: snowflake
+    schema: stg
+    tables:
+      - name: rf_coastline_distances
+        identifier: rf_coastline_distances
+      - name: rf_country_codes
+        identifier: rf_country_codes
+      - name: rf_square_kilometers
+        identifier: rf_square_kilometers
