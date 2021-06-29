@@ -36,7 +36,7 @@ models:
     transient: false
     dbt_jd_core:
     rf_coastline_distances:
-      materialized: table
+      materialized: view
       schema: dbt_jd_core
     rf_country_codes:
       materialized: view
